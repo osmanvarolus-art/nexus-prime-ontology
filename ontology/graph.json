@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "kavram_000_root",
+      "type": "Merkez_Kavram",
+      "isim": "Levh-i Mahfuz / İmam-ı Mübîn",
+      "meta_veri": {
+        "bilissel_seviye": "0_Ilahi_Program",
+        "ontolojik_yon": "Kavs-i Nuzul",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_001_tahayyul",
+      "type": "Mefhum",
+      "isim": "Tahayyül",
+      "meta_veri": {
+        "bilissel_seviye": "1_Tahayyul",
+        "sonuc": "Safsata",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_002_tasavvur",
+      "type": "Mefhum",
+      "isim": "Tasavvur",
+      "meta_veri": {
+        "bilissel_seviye": "2_Tasavvur",
+        "sonuc": "Kıymetsizlik",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_003_taakkul",
+      "type": "Mefhum",
+      "isim": "Taakkul",
+      "meta_veri": {
+        "bilissel_seviye": "3_Taakkul",
+        "sonuc": "Bitaraf",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_004_tasdik",
+      "type": "Mefhum",
+      "isim": "Tasdik",
+      "meta_veri": {
+        "bilissel_seviye": "4_Tasdik",
+        "sonuc": "İltizam",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_005_izan",
+      "type": "Mefhum",
+      "isim": "İz'an",
+      "meta_veri": {
+        "bilissel_seviye": "5_Izan",
+        "sonuc": "İmtisal",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_006_iltizam",
+      "type": "Mefhum",
+      "isim": "İltizam",
+      "meta_veri": {
+        "bilissel_seviye": "6_Iltizam",
+        "sonuc": "Taassup",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    },
+    {
+      "id": "kavram_007_itikad",
+      "type": "Mefhum",
+      "isim": "İtikad",
+      "meta_veri": {
+        "bilissel_seviye": "7_Itikad",
+        "sonuc": "Salabet",
+        "ontolojik_yon": "Kavs-i Uruc",
+        "kaynak": "Risale-i Nur Çizgisinde Âyetlerle Temellendirilmiş Hizmet Rehberi"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "kaynak_id": "kavram_000_root",
+      "hedef_id": "kavram_001_tahayyul",
+      "iliski_tipi": "nuzul_to_uruc",
+      "kural": "kull_den_cuze"
+    },
+    {
+      "kaynak_id": "kavram_001_tahayyul",
+      "hedef_id": "kavram_002_tasavvur",
+      "iliski_tipi": "bilissel_gecis",
+      "kural": "hayalden_sekillendirmeye"
+    },
+    {
+      "kaynak_id": "kavram_002_tasavvur",
+      "hedef_id": "kavram_003_taakkul",
+      "iliski_tipi": "bilissel_gecis",
+      "kural": "sekillendirmeden_iliskilendirmeye"
+    },
+    {
+      "kaynak_id": "kavram_003_taakkul",
+      "hedef_id": "kavram_004_tasdik",
+      "iliski_tipi": "bilissel_gecis",
+      "kural": "anlamadan_kabul_etmeye"
+    },
+    {
+      "kaynak_id": "kavram_004_tasdik",
+      "hedef_id": "kavram_005_izan",
+      "iliski_tipi": "bilissel_gecis",
+      "kural": "kabulden_kavramaya"
+    },
+    {
+      "kaynak_id": "kavram_005_izan",
+      "hedef_id": "kavram_006_iltizam",
+      "iliski_tipi": "bilissel_gecis",
+      "kural": "kavramadan_taraftarliga"
+    },
+    {
+      "kaynak_id": "kavram_006_iltizam",
+      "hedef_id": "kavram_007_itikad",
+      "iliski_tipi": "bilissel_gecis",
+      "kural": "taraftarliktan_inanmaya"
+    }
+  ]
+}
